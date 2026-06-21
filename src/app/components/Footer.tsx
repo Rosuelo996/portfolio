@@ -61,6 +61,7 @@ const Footer = ({ darkMode }: Props) => {
               <a
                 href="/resume.pdf"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="social__link click"
               >
                 <FontAwesomeIcon icon={faFile} className="social__link--icon" />

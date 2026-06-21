@@ -1,7 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faFile } from "@fortawesome/free-solid-svg-icons";
-import { faLinkedinIn, faGithub } from "@fortawesome/free-brands-svg-icons";
-import "aos/dist/aos.css";
+import { faLinkedinIn, faGithub } from "@fortawesome/free-brands-svg-icons"
 
 type Props = {
   openModal: () => void;
@@ -20,7 +19,7 @@ const Landing = ({ openModal, darkMode }: Props) => {
             <h1
               className="hero__title"
               data-aos="fade"
-              data-aos-delay="250"
+              data-aos-delay="200"
               data-aos-duration="1200"
             >
               Stefano
@@ -29,7 +28,7 @@ const Landing = ({ openModal, darkMode }: Props) => {
             <p
               className="hero__subtitle"
               data-aos="fade-up"
-              data-aos-delay="450"
+              data-aos-delay="350"
               data-aos-duration="1200"
             >
               Frontend Developer
@@ -37,7 +36,7 @@ const Landing = ({ openModal, darkMode }: Props) => {
             <p
               className="hero__description"
               data-aos="fade-up"
-              data-aos-delay="650"
+              data-aos-delay="450"
               data-aos-duration="1200"
             >
               Turning ideas into modern web experiences with clean code and
@@ -47,7 +46,7 @@ const Landing = ({ openModal, darkMode }: Props) => {
             <div
               className="social__list"
               data-aos="fade"
-              data-aos-delay="1000"
+              data-aos-delay="650"
               data-aos-anchor=".hero__description"
               data-aos-duration="1200"
             >
@@ -71,7 +70,12 @@ const Landing = ({ openModal, darkMode }: Props) => {
                   className="social__link--icon"
                 />
               </a>
-              <a href="#" target="_blank" className="social__link click">
+              <a
+                href="/resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social__link click"
+              >
                 <FontAwesomeIcon icon={faFile} className="social__link--icon" />
               </a>
             </div>
@@ -211,7 +215,7 @@ const Landing = ({ openModal, darkMode }: Props) => {
         data-aos="fade"
         data-aos-delay="1200"
         data-aos-anchor=".hero__description"
-        data-aos-duration="1200"
+        data-aos-duration="800"
         onClick={openModal}
       >
         <FontAwesomeIcon icon={faEnvelope} className="mail__btn--icon" />
