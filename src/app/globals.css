@@ -800,6 +800,15 @@ MAIL BUTTON
   display: flex;
   justify-content: center;
   align-items: center;
+  transition:
+    background-color 300ms ease,
+    color 300ms ease,
+    transform 300ms ease;
+}
+
+.mail__btn:hover {
+  background-color: #c9ad88;
+  color: #1e2a24;
 }
 
 .mail__btn--icon {

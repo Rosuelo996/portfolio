@@ -212,10 +212,6 @@ const Landing = ({ openModal, darkMode }: Props) => {
 
       <button
         className="mail__btn click"
-        data-aos="fade"
-        data-aos-delay="1200"
-        data-aos-anchor=".hero__description"
-        data-aos-duration="800"
         onClick={openModal}
       >
         <FontAwesomeIcon icon={faEnvelope} className="mail__btn--icon" />
