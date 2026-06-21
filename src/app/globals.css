@@ -10,7 +10,7 @@
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
-  color-scheme: light;
+  color-scheme: only light;
 }
 
 body {
@@ -718,7 +718,7 @@ HERO
   }
 
   .hero__stack {
-    --scene-size: clamp(240px, 60vw, 220px);
+    --scene-size: clamp(220px, 60vw, 240px);
   }
   .hero__visual {
     min-height: auto;
