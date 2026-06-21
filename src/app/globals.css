@@ -259,7 +259,7 @@ HERO
   border-style: none;
   transition:
     color 250ms ease,
-    tranform 250ms ease;
+    transform 250ms ease;
 }
 
 .social__link:hover {
