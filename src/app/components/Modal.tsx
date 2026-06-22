@@ -102,7 +102,7 @@ const Modal = ({ closeModal }: Props) => {
 
               <div className="modal__language">
                 <img
-                  src="/icons/JAVA.webp"
+                  src="/icons/Java.webp"
                   alt=""
                   className="modal__language--img"
                 />
