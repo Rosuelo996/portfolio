@@ -2,6 +2,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
+import Image from "next/image";
 
 const Projects = () => {
   return (
@@ -26,7 +27,13 @@ const Projects = () => {
             data-aos="fade-up"
             data-aos-duration="700"
           >
-            <img src="/icons/skinstric2.png" alt="" className="project__img" />
+            <Image
+              className="project__img"
+              src="/icons/skinstric2.png"
+              alt="Skinstric skincare analysis dashboard"
+              width={1600}
+              height={900}
+            />
             <div className="project__overlay"></div>
             <div className="project__content">
               <h3 className="project__title">Skinstric</h3>
@@ -57,7 +64,13 @@ const Projects = () => {
             data-aos="fade-up"
             data-aos-duration="700"
           >
-            <img src="/icons/movie-vault.png" alt="" className="project__img" />
+            <Image
+              className="project__img"
+              src="/icons/movie-vault.png"
+              alt="Movie Vault movie search application"
+              width={1600}
+              height={900}
+            />
             <div className="project__overlay"></div>
             <div className="project__content">
               <h3 className="project__title">Movie Vault</h3>
@@ -88,7 +101,13 @@ const Projects = () => {
             data-aos="fade-up"
             data-aos-duration="700"
           >
-            <img src="/icons/ultraverse2.png" alt="" className="project__img" />
+            <Image
+              className="project__img"
+              src="/icons/ultraverse2.png"
+              alt="Ultraverse NFT marketplace homepage"
+              width={1600}
+              height={900}
+            />
             <div className="project__overlay"></div>
             <div className="project__content">
               <h3 className="project__title"> Ultraverse</h3>
@@ -122,7 +141,13 @@ const Projects = () => {
             data-aos="fade-up"
             data-aos-duration="700"
           >
-            <img src="/icons/summarist2.png" alt="" className="project__img" />
+            <Image
+              className="project__img"
+              src="/icons/summarist2.png"
+              alt="Summarist audiobook platform interface"
+              width={1600}
+              height={900}
+            />
             <div className="project__overlay"></div>
             <div className="project__content">
               <h3 className="project__title"> Summarist</h3>
@@ -153,7 +178,13 @@ const Projects = () => {
             data-aos="fade-up"
             data-aos-duration="700"
           >
-            <img src="/icons/library.png" alt="" className="project__img" />
+            <Image
+              className="project__img"
+              src="/icons/library.png"
+              alt="Library e-commerce application homepage"
+              width={1600}
+              height={900}
+            />
             <div className="project__overlay"></div>
             <div className="project__content">
               <h3 className="project__title">Library</h3>
@@ -187,10 +218,12 @@ const Projects = () => {
             data-aos="fade-up"
             data-aos-duration="700"
           >
-            <img
-              src="/icons/car-subscription.png"
-              alt=""
+            <Image
               className="project__img"
+              src="/icons/car-subscription.png"
+              alt="Car subscription platform with filtering"
+              width={1600}
+              height={900}
             />
             <div className="project__overlay"></div>
             <div className="project__content">
