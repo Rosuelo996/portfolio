@@ -64,40 +64,40 @@ const HeroVisual = ({ openModal, darkMode }: Props) => {
 
             {darkMode ? (
               <img
-                src="/icons/platform-bottom-dm.svg"
+                src="/icons/platform-bottom2.svg"
                 className="hero__platform hero__platform--bottom"
               />
             ) : (
               <img
-                src="/icons/platform-bottom.svg"
+                src="/icons/platform-bottom2.svg"
                 className="hero__platform hero__platform--bottom"
               />
             )}
 
             {darkMode ? (
               <img
-                src="/icons/platform-top-dm.svg"
+                src="/icons/platform-top2.svg"
                 className="hero__platform hero__platform--top"
               />
             ) : (
               <img
-                src="/icons/platform-top.svg"
+                src="/icons/platform-top2.svg"
                 className="hero__platform hero__platform--top"
               />
             )}
 
-            <img src="/icons/card.svg" className="hero__platform hero__chip" />
+            <img src="/icons/card2.svg" className="hero__platform hero__chip" />
 
             <div className="hero__cards">
               <a href="#gallery">
                 {darkMode ? (
                   <img
-                    src="/icons/gallery-dm.svg"
+                    src="/icons/gallery-dm2.svg"
                     className="hero__card hero__card--gallery"
                   />
                 ) : (
                   <img
-                    src="/icons/gallery.svg"
+                    src="/icons/gallery2.svg"
                     className="hero__card hero__card--gallery"
                   />
                 )}
@@ -106,12 +106,12 @@ const HeroVisual = ({ openModal, darkMode }: Props) => {
               <a href="#projects">
                 {darkMode ? (
                   <img
-                    src="/icons/project-dm.svg"
+                    src="/icons/project-dm2.svg"
                     className="hero__card hero__card--projects"
                   />
                 ) : (
                   <img
-                    src="/icons/project.svg"
+                    src="/icons/project2.svg"
                     className="hero__card hero__card--projects"
                   />
                 )}
@@ -120,12 +120,12 @@ const HeroVisual = ({ openModal, darkMode }: Props) => {
               <a href="#contact" onClick={openModal}>
                 {darkMode ? (
                   <img
-                    src="/icons/contact-dm.svg"
+                    src="/icons/contact-dm2.svg"
                     className="hero__card hero__card--contact"
                   />
                 ) : (
                   <img
-                    src="/icons/contact.svg"
+                    src="/icons/contact2.svg"
                     className="hero__card hero__card--contact"
                   />
                 )}
