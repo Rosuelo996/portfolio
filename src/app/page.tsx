@@ -1,5 +1,5 @@
 "use client";
-import Landing from "./components/Landing";
+import Landing from "./components/Landing/Landing";
 import Nav from "./components/Nav";
 import Gallery from "./components/Gallery/Gallery";
 import Projects from "./components/Projects";

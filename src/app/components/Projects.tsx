@@ -8,17 +8,29 @@ const Projects = () => {
   return (
     <section id="projects">
       <div className="container">
+        <p className="section__eyebrow">Projects</p>
         <div className="section__header">
           <h2 className="section__title" data-aos="fade">
-            Here are my featured <span className="gold">Projects</span>.
+            Making complexity
+            <br />
+            feel <span className="gold">effortless</span>.
           </h2>
-          <p
+
+          <div
             className="section__description"
             data-aos="fade"
             data-aos-delay="100"
           >
-            Built from concept to deployment with thoughtful user experiences.
-          </p>
+            <p className="section__description--highlight">
+              {" "}
+              Every project started with a real problem.
+            </p>
+            <p className="section__description--para">
+              From responsive interfaces to API integrations and complex
+              application logic, these projects show how thoughtful engineering
+              turns ideas into products that feel intuitive to use.
+            </p>
+          </div>
         </div>
 
         <div className="project__grid">

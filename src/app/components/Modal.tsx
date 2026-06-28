@@ -1,6 +1,6 @@
 "use client";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faXmark } from "@fortawesome/free-solid-svg-icons";
+import { faXmark, faUser, faEnvelope, faComment } from "@fortawesome/free-solid-svg-icons";
 import { useState, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 
@@ -140,44 +140,59 @@ const Modal = ({ closeModal }: Props) => {
         </div>
 
         <div className="modal__half modal__contact">
-          <h3 className="modal__title--contact">Let's have a chat!</h3>
+          <p className="modal__eyebrow">Get in touch</p>
+          <h3 className="modal__title--contact">Let's work together!</h3>
           <h4 className="modal__subtitle--contact">
-            Open to new opportunities
+            Interested in working together? {" "} <br/>
+            I'd love to hear from you.
           </h4>
           <form className="form" onSubmit={handleSubmit}>
             <div className="form__item">
               <label htmlFor="name" className="form__item--label">
                 Name
               </label>
-              <input
+              <div className="form__field">
+                <FontAwesomeIcon icon={faUser} className="form__icon" />
+                <input
+                placeholder="Your name"
                 name="user_name"
                 type="text"
                 id="name"
                 className="form__item--input"
               />
+              </div>
             </div>
 
             <div className="form__item">
               <label htmlFor="email" className="form__item--label">
                 Email
               </label>
-              <input
+              <div className="form__field">
+                <FontAwesomeIcon icon={faEnvelope} className="form__icon" />
+                <input
+                placeholder="Your email"
                 name="user_email"
                 type="email"
                 id="email"
                 className="form__item--input"
               />
+              </div>
             </div>
 
             <div className="form__item">
               <label htmlFor="message" className="form__item--label">
                 Message
               </label>
-              <textarea
+              <div className="form__field form__field--textarea">
+                <FontAwesomeIcon icon={faComment} className="form__icon" />
+                <textarea
+                placeholder="Tell me about the opportunity..."
                 name="user_message"
                 id="message"
                 className="form__item--input"
               ></textarea>
+              </div>
+              
             </div>
             <button className="form__submit">Send it my way</button>
 

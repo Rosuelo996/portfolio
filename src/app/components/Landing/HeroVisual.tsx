@@ -1,88 +1,13 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope, faFile } from "@fortawesome/free-solid-svg-icons";
-import { faLinkedinIn, faGithub } from "@fortawesome/free-brands-svg-icons"
 
 type Props = {
   openModal: () => void;
   darkMode: boolean;
 };
 
-const Landing = ({ openModal, darkMode }: Props) => {
+
+const HeroVisual = ({ openModal, darkMode }: Props) => {
   return (
-    <section id="landing-page">
-      <section className="hero">
-        <div className="hero__content">
-          <div className="hero__header">
-            <p className="hero__intro" data-aos="fade" data-aos-delay="0">
-              Hi, I'm
-            </p>
-            <h1
-              className="hero__title"
-              data-aos="fade"
-              data-aos-delay="200"
-              data-aos-duration="1200"
-            >
-              Stefano
-              <span>.</span>
-            </h1>
-            <p
-              className="hero__subtitle"
-              data-aos="fade-up"
-              data-aos-delay="350"
-              data-aos-duration="1200"
-            >
-              Frontend Developer
-            </p>
-            <p
-              className="hero__description"
-              data-aos="fade-up"
-              data-aos-delay="450"
-              data-aos-duration="1200"
-            >
-              Turning ideas into modern web experiences with clean code and
-              attention to detail.
-            </p>
-
-            <div
-              className="social__list"
-              data-aos="fade"
-              data-aos-delay="650"
-              data-aos-anchor=".hero__description"
-              data-aos-duration="1200"
-            >
-              <a
-                href="https://www.linkedin.com/in/stefano-w-673087182/"
-                target="_blank"
-                className="social__link click"
-              >
-                <FontAwesomeIcon
-                  icon={faLinkedinIn}
-                  className="social__link--icon"
-                />
-              </a>
-              <a
-                href="https://github.com/Rosuelo996"
-                target="_blank"
-                className="social__link click"
-              >
-                <FontAwesomeIcon
-                  icon={faGithub}
-                  className="social__link--icon"
-                />
-              </a>
-              <a
-                href="/resume.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="social__link click"
-              >
-                <FontAwesomeIcon icon={faFile} className="social__link--icon" />
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div className="hero__visual">
+    <div className="hero__visual">
           <div className="hero__particles">
             <img
               src="/icons/black-sphere.svg"
@@ -208,22 +133,7 @@ const Landing = ({ openModal, darkMode }: Props) => {
             </div>
           </div>
         </div>
-      </section>
+  )
+}
 
-      <button
-        className="mail__btn click"
-        onClick={openModal}
-      >
-        <FontAwesomeIcon icon={faEnvelope} className="mail__btn--icon" />
-      </button>
-
-      <div className="scroll">
-        <a href="#gallery">
-          <div className="scroll__icon click"></div>
-        </a>
-      </div>
-    </section>
-  );
-};
-
-export default Landing;
+export default HeroVisual
