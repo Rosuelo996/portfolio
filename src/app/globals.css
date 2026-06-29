@@ -1880,7 +1880,10 @@ MODAL
 .modal__visual {
   margin-top: 8px;
   flex-shrink: 0;
+  transform-origin: top center;
+  will-change: transform;
 }
+
 
 .modal__frame {
   width: 120px;
@@ -2328,7 +2331,7 @@ textarea.form__item--input {
     gap: 32px;
   }
 
-  .modal__frame {
+  .modal__visual {
     order: 1;
   }
   .modal__content {
@@ -2344,9 +2347,6 @@ textarea.form__item--input {
   .modal__technologies {
     margin: 0 auto;
   }
-
-
-
 }
 
 /* 
