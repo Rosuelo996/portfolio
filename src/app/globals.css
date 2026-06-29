@@ -112,7 +112,7 @@ nav {
 }
 
 .nav__link--anchor:hover {
-  color: #c79b63;
+  color: #C08F69;
 }
 
 .theme-toggle {
@@ -263,23 +263,38 @@ HERO
   gap: 8px;
   min-width: 160px;
   padding: 12px 32px;
-  border: 1px solid rgba(30, 42, 36, 0.25);
   border-radius: 20px;
+}
+
+.hero__button--secondary {
+  border: 1px solid rgba(30, 42, 36, 0.25);
   transition:
     transform 300ms ease,
     border-color 300ms ease,
+    color 300ms ease,
     box-shadow 300ms ease;
 }
 
-.hero__button:hover {
+.hero__button--secondary:hover {
   transform: translateY(-2px);
-  border-color: #1e2a24;
-  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.06);
+  border-color: #C08F69;
+  color: #b97743;
+  box-shadow:
+  0 10px 30px rgba(0, 0, 0, 0.08),
+  0 1px 2px rgba(0, 0, 0, 0.04);
 }
 
 .hero__button--primary {
   background-color: #1e2a24;
   color: #faf8f5;
+  transition:
+    transform 300ms ease,
+    box-shadow 300ms ease;
+}
+
+.hero__button--primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.06);
 }
 
 .social__list {
@@ -303,7 +318,7 @@ HERO
 }
 
 .social__link:hover {
-  background-color: #c9ad88;
+  background-color: #C08F69;
   transform: translateY(-2px) scale(1.06);
 }
 
@@ -874,7 +889,7 @@ MAIL BUTTON
 }
 
 .mail__btn:hover {
-  background-color: #c9ad88;
+  background-color: #C08F69;
   color: #1e2a24;
 }
 
@@ -1639,14 +1654,14 @@ FOOTER
 .footer__divider--line {
   flex: 1;
   height: 1px;
-  background-color: #c9ad88;
+  background-color: #b97743;
 }
 
 .footer__divider--dot {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background-color: #c9ad88;
+  background-color: #b97743;
   flex-shrink: 0;
 }
 
@@ -2450,6 +2465,11 @@ DARK MODE
   background-color: #000;
 }
 
+.dark .footer__divider--dot,
+.dark .footer__divider--line {
+  background-color: #c9ad88;
+}
+
 .dark .footer__title {
   color: #f4f2ee;
 }
@@ -2487,3 +2507,4 @@ DARK MODE
   color: #f4f2ee;
   opacity: 0.8;
 }
+

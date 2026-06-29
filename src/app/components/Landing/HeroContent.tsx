@@ -58,7 +58,7 @@ const HeroContent = ({ openModal }: Props) => {
           </a>
 
           <a href="#contact" onClick={openModal}>
-            <button className="hero__button hero__button">
+            <button className="hero__button hero__button--secondary">
               <span>Let's connect</span>
               <FontAwesomeIcon icon={faArrowRight} />
             </button>
