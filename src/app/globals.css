@@ -2358,6 +2358,12 @@ textarea.form__item--input {
   .form__submit {
     max-width: 320px;
   }
+  .modal__frame {
+    width: 100px;
+    height: 100px;
+    margin-top: 8px;
+  }
+
 }
 
 /* 
