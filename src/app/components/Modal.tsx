@@ -150,7 +150,7 @@ const Modal = ({ closeModal }: Props) => {
 
               <div className="modal__language">
                 <img
-                  src="/icons/Next.js.png"
+                  src="/icons/Nextjs2.svg"
                   alt=""
                   className="modal__language--img"
                 />

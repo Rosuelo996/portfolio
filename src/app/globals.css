@@ -1931,14 +1931,14 @@ MODAL
 }
 
 .modal__technologies {
-  margin-top: 24px;
+  margin-top: 12px;
 }
 
 .modal__languages {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-content: center;
-  gap: 28px 40px;
+  gap: 28px 28px;
   width: fit-content;
 }
 
@@ -1948,7 +1948,7 @@ MODAL
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 12px;
+  padding: 8px;
 }
 
 .modal__language--img {
@@ -2215,42 +2215,8 @@ textarea.form__item--input {
   text-align: center;
 }
 
-@media (max-width: 900px) {
-  .modal__container {
-    min-height: auto;
-  }
-  .modal__half {
-    padding: 40px 48px;
-    gap: 16px;
-  }
-  .modal__technologies {
-    margin-top: 12px;
-  }
-  .modal__languages {
-    gap: 16px 28px;
-  }
-  .modal__language {
-    padding: 8px;
-  }
-  .modal__language--img {
-    width: 42px;
-    height: 42px;
-  }
-  .form {
-    gap: 28px;
-    margin: 12px 0;
-  }
-  .form__submit {
-    margin-top: 8px;
-  }
 
-  .modal__frame {
-    width: 90px;
-    height: 90px;
-  }
-}
-
-@media (max-width: 768px) {
+@media (max-width: 1050px) {
   .modal {
     position: fixed;
     inset: 0;
@@ -2267,7 +2233,6 @@ textarea.form__item--input {
 
   .modal__half {
     width: 100%;
-    padding: 32px 40px;
   }
 
   .modal__contact {
@@ -2322,7 +2287,7 @@ textarea.form__item--input {
   }
 
   .modal__title--about {
-    font-size: 34px;
+    font-size: 32px;
     margin-bottom: 8px;
   }
 
@@ -2332,17 +2297,13 @@ textarea.form__item--input {
 
   .modal__text--about {
     gap: 16px;
-    margin-bottom: 16px;
+    margin-bottom: 18px;
   }
 
   .modal__description {
     font-size: 15px;
     line-height: 1.65;
     max-width: 500px;
-  }
-
-  .modal__technologies {
-    margin-top: 24px;
   }
 
   .modal__languages {
@@ -2354,15 +2315,37 @@ textarea.form__item--input {
   }
 }
 
+
 @media (max-width: 548px) {
   .form__submit {
     max-width: 320px;
   }
-  .modal__frame {
-    width: 100px;
-    height: 100px;
-    margin-top: 8px;
+
+  .modal__intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
   }
+
+  .modal__frame {
+    order: 1;
+  }
+  .modal__content {
+    order: 2;
+    text-align: center;
+  }
+
+  .modal__frame {
+    width: 120px;
+    height: 120px;
+  }
+
+  .modal__technologies {
+    margin: 0 auto;
+  }
+
+
 
 }
 
