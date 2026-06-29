@@ -260,6 +260,7 @@ HERO
   display: flex;
   align-items: center;
   justify-content: center;
+  border: 1px solid rgba(30, 42, 36, 0.25);
   gap: 8px;
   min-width: 160px;
   padding: 12px 32px;
@@ -267,7 +268,6 @@ HERO
 }
 
 .hero__button--secondary {
-  border: 1px solid rgba(30, 42, 36, 0.25);
   transition:
     transform 300ms ease,
     border-color 300ms ease,
@@ -286,6 +286,7 @@ HERO
 
 .hero__button--primary {
   background-color: #1e2a24;
+  border-color: #1e2a24;
   color: #faf8f5;
   transition:
     transform 300ms ease,
@@ -2349,10 +2350,6 @@ DARK MODE
     background-color 300ms ease,
     color 300ms ease,
     box-shadow 300ms ease;
-}
-
-.dark .hero__button--primary {
-  border-color: #d1b28b;
 }
 
 .dark .hero__button:hover {
