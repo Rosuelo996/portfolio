@@ -1,6 +1,11 @@
 "use client";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faXmark, faUser, faEnvelope, faComment } from "@fortawesome/free-solid-svg-icons";
+import {
+  faXmark,
+  faUser,
+  faEnvelope,
+  faComment,
+} from "@fortawesome/free-solid-svg-icons";
 import { useState, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 
@@ -65,19 +70,35 @@ const Modal = ({ closeModal }: Props) => {
 
       <div className={`modal__container ${isVisible ? "modal__open" : ""}`}>
         <div className="modal__half modal__about">
-          <h3 className="modal__title--about">Here's a bit about me.</h3>
-          <h4 className="modal__subtitle--about">Frontend Developer</h4>
-          <div className="modal__text">
-            <p className="modal__description">
+          <div className="modal__intro">
+            <div className="modal__content">
+              <p className="modal__eyebrow modal__eyebrow--about">About me</p>
+              <h3 className="modal__title--about">Here's a bit about me.</h3>
+              <h4 className="modal__subtitle--about">Frontend Developer</h4>
+
+          <div className="modal__text--about">
+            <p className="modal__description--about">
               Leading teams taught me that great experiences start with
               understanding people, and I bring that mindset into frontend
               development.
             </p>
-            <p className="modal__description">
+            <p className="modal__description--about">
               I build responsive, accessible and high performance web
               experiences with a focus on clarity, consistency and thoughtful
               details.
             </p>
+            </div>
+            </div>
+
+            <div className="modal__visual">
+              <div className="modal__frame">
+                <img
+                  src="./icons/profile-pic.jpeg"
+                  alt="profile pic"
+                  className="modal__image"
+                />
+              </div>
+            </div>
           </div>
 
           <div className="modal__technologies">
@@ -140,10 +161,10 @@ const Modal = ({ closeModal }: Props) => {
         </div>
 
         <div className="modal__half modal__contact">
-          <p className="modal__eyebrow">Get in touch</p>
+          <p className="modal__eyebrow modal__eyebrow--contact">Get in touch</p>
           <h3 className="modal__title--contact">Let's work together!</h3>
           <h4 className="modal__subtitle--contact">
-            Interested in working together? {" "} <br/>
+            Interested in working together? <br />
             I'd love to hear from you.
           </h4>
           <form className="form" onSubmit={handleSubmit}>
@@ -154,12 +175,12 @@ const Modal = ({ closeModal }: Props) => {
               <div className="form__field">
                 <FontAwesomeIcon icon={faUser} className="form__icon" />
                 <input
-                placeholder="Your name"
-                name="user_name"
-                type="text"
-                id="name"
-                className="form__item--input"
-              />
+                  placeholder="Your name"
+                  name="user_name"
+                  type="text"
+                  id="name"
+                  className="form__item--input"
+                />
               </div>
             </div>
 
@@ -170,12 +191,12 @@ const Modal = ({ closeModal }: Props) => {
               <div className="form__field">
                 <FontAwesomeIcon icon={faEnvelope} className="form__icon" />
                 <input
-                placeholder="Your email"
-                name="user_email"
-                type="email"
-                id="email"
-                className="form__item--input"
-              />
+                  placeholder="Your email"
+                  name="user_email"
+                  type="email"
+                  id="email"
+                  className="form__item--input"
+                />
               </div>
             </div>
 
@@ -186,21 +207,18 @@ const Modal = ({ closeModal }: Props) => {
               <div className="form__field form__field--textarea">
                 <FontAwesomeIcon icon={faComment} className="form__icon" />
                 <textarea
-                placeholder="Tell me about the opportunity..."
-                name="user_message"
-                id="message"
-                className="form__item--input"
-              ></textarea>
+                  placeholder="Tell me about the opportunity..."
+                  name="user_message"
+                  id="message"
+                  className="form__item--input"
+                ></textarea>
               </div>
-              
             </div>
             <button className="form__submit">Send it my way</button>
 
             {formError && <p className="form__message">{formError}</p>}
             {sendError && <p className="form__message">{sendError}</p>}
-
           </form>
-
 
           {isLoading && (
             <div className="modal__loading">
