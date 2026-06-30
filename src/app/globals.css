@@ -2377,15 +2377,11 @@ DARK MODE
   color: #d1b28b;
 }
 
-.dark .hero__title span {
-  color: #c9ad88;
+.dark .hero__title {
+  color: #faf8f5;
 }
 
 .dark .hero__title--bottom span {
-  color: #b97743;
-}
-
-.dark .hero__title--bottom {
   color: #c9ad88;
 }
 
