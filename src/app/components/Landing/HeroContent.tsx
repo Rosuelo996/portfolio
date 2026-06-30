@@ -14,21 +14,21 @@ const HeroContent = ({ openModal }: Props) => {
           Stefano W. • Frontend Developer
         </p>
 
-        <div
-          className="hero__titles"
-          data-aos="fade"
-          data-aos-delay="200"
-          data-aos-duration="1200"
-        >
-          <h1 className="hero__title hero_title--top">
-            Most stop <br className="hero__break" />
-            when it works
-            <span>.</span>
+        <div className="hero__titles">
+          <h1
+            className="hero__title hero_title--top"
+            data-aos="fade"
+            data-aos-delay="100"
+            data-aos-duration="1200"
+          >
+            Hey
+            <span className="gold">.</span>
           </h1>
-          <h1 className="hero__title hero__title--bottom gold">
-            I stop when <br className="hero__break" />
-            it feels right
-            <span className="green">.</span>
+          <h1 className="hero__title hero__title--bottom" data-aos="fade"
+          data-aos-delay="300"
+          data-aos-duration="1200">
+            I'm
+            <span className="gold"> Stefano</span>.
           </h1>
         </div>
 

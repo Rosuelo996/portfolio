@@ -235,10 +235,6 @@ HERO
   letter-spacing: -0.04em;
 }
 
-.hero__title--bottom {
-  font-style: italic;
-}
-
 .hero__description {
   max-width: 34rem;
   line-height: 1.8;
