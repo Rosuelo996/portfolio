@@ -21,8 +21,7 @@ const HeroContent = ({ openModal }: Props) => {
             data-aos-delay="100"
             data-aos-duration="1200"
           >
-            Hey
-            <span className="gold">.</span>
+            Hey,
           </h1>
           <h1 className="hero__title hero__title--bottom" data-aos="fade"
           data-aos-delay="300"
