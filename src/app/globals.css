@@ -420,7 +420,7 @@ HERO
 
 .hero__card {
   position: absolute;
-  width: calc(var(--scene-size) * 0.68);
+  width: calc(var(--scene-size) * 0.65);
   opacity: 0;
   transition:
     scale 400ms ease,
