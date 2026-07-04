@@ -3,6 +3,7 @@ import { useState } from "react";
 import EyeFollow from "./animations/EyeFollow";
 import Clock from "./animations/Clock";
 import OrbitalGlow from "./animations/OrbitalGlow";
+import Typewriter from "../ui/Typewriter";
 
 const Gallery = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -33,10 +34,7 @@ const Gallery = () => {
             data-aos="fade"
             data-aos-delay="100"
           >
-            <p className="section__description--highlight">
-              {" "}
-              Every interaction started as a small experiment.
-            </p>
+            <Typewriter text="Every interaction started as a small experiment." />
             <p className="section__description--para">
               This gallery is where I experiment with interaction, timing and
               motion before those ideas become part of larger projects.

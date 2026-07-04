@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
+import Typewriter from "./ui/Typewriter";
 
 const Projects = () => {
   return (
@@ -21,10 +22,7 @@ const Projects = () => {
             data-aos="fade"
             data-aos-delay="100"
           >
-            <p className="section__description--highlight">
-              {" "}
-              Every project started with a real problem.
-            </p>
+            <Typewriter text="Every project started with a real problem." />
             <p className="section__description--para">
               From responsive interfaces to API integrations and complex
               application logic, these projects show how thoughtful engineering

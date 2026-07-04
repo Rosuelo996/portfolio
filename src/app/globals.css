@@ -2563,3 +2563,21 @@ DARK MODE
 .dark .modal__frame {
   border-color: #c9ad88;
 }
+
+/* TYPEWRITER */
+
+.typewriter__caret {
+  display: inline-block;
+  width: 2px;
+  height: 0.95em;
+  margin-left: 3px;
+  background-color: currentColor;
+  border-radius: 1px;
+  animation: caret-blink 1s step-end infinite;
+}
+
+@keyframes caret-blink {
+  50% {
+    opacity: 0;
+  }
+}
