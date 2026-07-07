@@ -299,7 +299,7 @@ HERO
 }
 
 .hero__button--secondary {
-  background: #FFFFFF73;
+  background: #ffffff73;
   border-color: #1e2a241f;
   transition:
     transform 300ms ease,
@@ -312,8 +312,8 @@ HERO
   transform: translateY(-2px);
   border-color: #d67a33;
   box-shadow:
-    0 10px 24px rgba(0,0,0,.08),
-    0 0 24px rgba(214,122,51,.12);
+    0 10px 24px rgba(0, 0, 0, 0.08),
+    0 0 24px rgba(214, 122, 51, 0.12);
 }
 
 .hero__button--primary {
@@ -351,8 +351,8 @@ HERO
 }
 
 .social__link:hover {
-  background-color: #FFFFFF73;
-  box-shadow: 0 8px 20px rgba(30,42,36,.18);
+  background-color: #ffffff73;
+  box-shadow: 0 8px 20px rgba(30, 42, 36, 0.18);
   transform: translateY(-2px) scale(1.06);
 }
 
@@ -917,8 +917,8 @@ MAIL BUTTON
 }
 
 .mail__btn:hover {
-  background-color: #FFFFFF73;
-  box-shadow: 0 8px 20px rgba(30,42,36,.18);
+  background-color: #ffffff73;
+  box-shadow: 0 8px 20px rgba(30, 42, 36, 0.18);
   color: #1b1712;
 }
 
@@ -1525,11 +1525,15 @@ PROJECTS
   box-shadow: 0 30px 60px -30px rgba(0, 0, 0, 0.4);
   object-fit: cover;
   order: 1;
+  transition: transform 60ms ease;
+  transform-style: preserve-3d;
+  will-change: transform;
 }
 
 .project__image {
   width: 100%;
   height: 100%;
+  transition: transform 600ms cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .project__content {
@@ -1593,10 +1597,10 @@ PROJECTS
 }
 
 .project__tech {
- font-size: 16px;
- font-weight: 500;
- color: #1b1712;
- opacity: 0.9;
+  font-size: 16px;
+  font-weight: 500;
+  color: #1b1712;
+  opacity: 0.9;
 }
 
 .project__divider {
@@ -1624,34 +1628,38 @@ PROJECTS
   text-decoration: none;
   color: inherit;
   transition:
-    background-color .25s ease,
-    border-color .25s ease,
-    box-shadow .25s ease,
-    transform .25s ease,
-    color .25s ease;
+    background-color 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease,
+    transform 0.25s ease,
+    color 0.25s ease;
 }
 
 .project__link--secondary {
-  background: #FFFFFF73;
+  background: #ffffff73;
   border: 1px solid #1e2a241f;
 }
 
 .project__link--secondary:hover {
   transform: translateY(-2px);
-  border-color: #D67A33;
-  box-shadow: 0 10px 24px rgba(0,0,0,.08);
+  border-color: #d67a33;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
 }
 
 .project__link--primary {
-  background: #1B1712;
+  background: #1b1712;
   color: #fff;
   border-color: transparent;
 }
 
 .project__link--primary:hover {
   transform: translateY(-2px);
-  background: #2A211B;
+  background: #2a211b;
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+}
+
+.project:has(.project__link--primary:hover) .project__image {
+  transform: scale(1.03);
 }
 
 .project__icon {
@@ -1662,35 +1670,35 @@ PROJECTS
 @media (max-width: 1000px) {
   .project__card {
     flex: 6;
-}
+  }
 
-.project__content {
+  .project__content {
     flex: 4;
-}
+  }
 
-.project__header {
+  .project__header {
     margin-bottom: 12px;
-}
+  }
 
-.project__number {
-  font-size: 28px;
-}
+  .project__number {
+    font-size: 28px;
+  }
 
-.project__description {
-  font-size: 16px;
-  margin-bottom: 16px;
-}
+  .project__description {
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
 
-.project__tech {
-  font-size: 14px;
-}
+  .project__tech {
+    font-size: 14px;
+  }
 
-.project__links {
-  gap: 12px;
-}
-.project__link {
-  padding: 12px 16px;
-}
+  .project__links {
+    gap: 12px;
+  }
+  .project__link {
+    padding: 12px 16px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -2624,11 +2632,11 @@ DARK MODE
 }
 
 .dark .clock {
-  background-color: #0D0B09;
+  background-color: #0d0b09;
 }
 
 .dark .pupil {
-  background-color: #0D0B09;
+  background-color: #0d0b09;
 }
 
 .dark .project__category {

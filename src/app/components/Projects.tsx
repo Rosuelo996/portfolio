@@ -4,6 +4,7 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
 import Typewriter from "./ui/Typewriter";
+import TiltCard from "./ui/Tilt";
 
 const Projects = () => {
   return (
@@ -35,6 +36,7 @@ const Projects = () => {
 
         <div className="project__list">
           <article className="project">
+            <TiltCard>
             <div
               className="project__card"
               data-aos="fade-up"
@@ -48,6 +50,7 @@ const Projects = () => {
                 height={900}
               />
             </div>
+            </TiltCard>
             <div
               className="project__content"
               data-aos="fade-up"
@@ -105,6 +108,7 @@ const Projects = () => {
           </article>
 
           <article className="project">
+            <TiltCard>
             <div
               className="project__card"
               data-aos="fade-up"
@@ -118,6 +122,7 @@ const Projects = () => {
                 height={900}
               />
             </div>
+            </TiltCard>
             <div
               className="project__content"
               data-aos="fade-up"
@@ -173,6 +178,7 @@ const Projects = () => {
           </article>
 
           <article className="project">
+            <TiltCard>
             <div
               className="project__card"
               data-aos="fade-up"
@@ -186,6 +192,7 @@ const Projects = () => {
                 height={900}
               />
             </div>
+            </TiltCard>
             <div
               className="project__content"
               data-aos="fade-up"
@@ -241,6 +248,7 @@ const Projects = () => {
           </article>
 
           <article className="project">
+            <TiltCard>
             <div
               className="project__card"
               data-aos="fade-up"
@@ -254,6 +262,7 @@ const Projects = () => {
                 height={900}
               />
             </div>
+            </TiltCard>
             <div
               className="project__content"
               data-aos="fade-up"
@@ -311,6 +320,7 @@ const Projects = () => {
           </article>
 
           <article className="project">
+            <TiltCard>
             <div
               className="project__card"
               data-aos="fade-up"
@@ -324,6 +334,7 @@ const Projects = () => {
                 height={900}
               />
             </div>
+            </TiltCard>
             <div
               className="project__content"
               data-aos="fade-up"
@@ -379,6 +390,7 @@ const Projects = () => {
           </article>
 
           <article className="project">
+            <TiltCard>
             <div
               className="project__card"
               data-aos="fade-up"
@@ -392,6 +404,7 @@ const Projects = () => {
                 height={900}
               />
             </div>
+            </TiltCard>
             <div
               className="project__content"
               data-aos="fade-up"
