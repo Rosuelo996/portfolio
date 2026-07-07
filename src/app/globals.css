@@ -287,7 +287,7 @@ HERO
 .hero__button {
   position: relative;
   overflow: hidden;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   border: 1px solid transparent;
@@ -296,10 +296,11 @@ HERO
   padding: 12px 32px;
   border-radius: 20px;
   margin-bottom: 16px;
+  font-size: 14px;
 }
 
 .hero__button--secondary {
-  background: #ffffff73;
+  background: #FBF6EFBF;
   border-color: #1e2a241f;
   transition:
     transform 300ms ease,
@@ -347,11 +348,12 @@ HERO
   transition:
     color 250ms ease,
     box-shadow 250ms ease,
+    background-color 250ms ease,
     transform 250ms ease;
 }
 
 .social__link:hover {
-  background-color: #ffffff73;
+  background-color: #FBF6EFBF;
   box-shadow: 0 8px 20px rgba(30, 42, 36, 0.18);
   transform: translateY(-2px) scale(1.06);
 }
@@ -917,7 +919,7 @@ MAIL BUTTON
 }
 
 .mail__btn:hover {
-  background-color: #ffffff73;
+  background-color: #FBF6EFBF;
   box-shadow: 0 8px 20px rgba(30, 42, 36, 0.18);
   color: #1b1712;
 }
@@ -1642,7 +1644,7 @@ PROJECTS
 }
 
 .project__link--secondary {
-  background: #ffffff73;
+  background: #FBF6EFBF;
   border: 1px solid #1e2a241f;
 }
 
@@ -2853,7 +2855,14 @@ DARK MODE
 /* MAGNETIC */
 
 .magnetic {
-  display: inline-block;
+  position: relative;
+  display: inline-flex;
   transition: transform 250ms cubic-bezier(.22, 1, .36, 1);
   will-change: transform;
+}
+
+.magnetic::before {
+  content: "";
+  position: absolute;
+  inset: -20px;
 }

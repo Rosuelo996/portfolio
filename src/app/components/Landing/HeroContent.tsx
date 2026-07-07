@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedinIn, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faFile, faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import Magnetic from "../ui/Magnetic";
 
 type Props = {
   openModal: () => void;
@@ -50,18 +51,18 @@ const HeroContent = ({ openModal }: Props) => {
           data-aos-anchor=".hero__description"
           data-aos-duration="1200"
         >
-          <a href="#projects">
-            <button className="hero__button hero__button--primary">
+          <Magnetic>
+            <a href="#projects" className="hero__button hero__button--primary">
               <span>View my work</span>
-            </button>
           </a>
+          </Magnetic>
 
-          <a href="#contact" onClick={openModal}>
-            <button className="hero__button hero__button--secondary">
+          <Magnetic>
+            <a href="#contact" onClick={openModal} className="hero__button hero__button--secondary">
               <span>Let's connect</span>
               <FontAwesomeIcon icon={faArrowRight} />
-            </button>
           </a>
+          </Magnetic>
         </div>
 
         <div

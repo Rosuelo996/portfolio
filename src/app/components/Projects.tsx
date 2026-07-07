@@ -5,6 +5,7 @@ import { faLink } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
 import Typewriter from "./ui/Typewriter";
 import TiltCard from "./ui/TiltCard";
+import Magnetic from "./ui/Magnetic";
 
 
 const Projects = () => {
@@ -88,6 +89,7 @@ const Projects = () => {
               </div>
 
               <div className="project__links">
+                <Magnetic>
                 <a
                   className="project__link project__link--secondary"
                   href="https://github.com/Rosuelo996/Skinstric"
@@ -96,7 +98,9 @@ const Projects = () => {
                   <FontAwesomeIcon icon={faGithub} className="project__icon" />
                   Visit GitHub
                 </a>
+                </Magnetic>
 
+                <Magnetic>
                 <a
                   className="project__link project__link--primary"
                   href="https://skinstric-amber.vercel.app/"
@@ -105,6 +109,7 @@ const Projects = () => {
                   <FontAwesomeIcon icon={faLink} className="project__icon" />
                   View Project
                 </a>
+                </Magnetic>
               </div>
             </div>
           </article>
@@ -158,6 +163,7 @@ const Projects = () => {
               </div>
 
               <div className="project__links">
+                <Magnetic>
                 <a
                   className="project__link project__link--secondary"
                   href="https://github.com/Rosuelo996/Movie-Vault"
@@ -166,7 +172,9 @@ const Projects = () => {
                   <FontAwesomeIcon icon={faGithub} className="project__icon" />
                   Visit GitHub
                 </a>
+                </Magnetic>
 
+                <Magnetic>
                 <a
                   className="project__link project__link--primary"
                   href="https://movie-vault-dusky.vercel.app/"
@@ -175,6 +183,7 @@ const Projects = () => {
                   <FontAwesomeIcon icon={faLink} className="project__icon" />
                   View Project
                 </a>
+                </Magnetic>
               </div>
             </div>
           </article>
@@ -228,6 +237,7 @@ const Projects = () => {
               </div>
 
               <div className="project__links">
+                <Magnetic>
                 <a
                   className="project__link project__link--secondary"
                   href="https://github.com/Rosuelo996/ultraverse"
@@ -236,7 +246,9 @@ const Projects = () => {
                   <FontAwesomeIcon icon={faGithub} className="project__icon" />
                   Visit GitHub
                 </a>
+                </Magnetic>
 
+                <Magnetic>
                 <a
                   className="project__link project__link--primary"
                   href="https://stefano-ultraverse.vercel.app/"
@@ -245,6 +257,7 @@ const Projects = () => {
                   <FontAwesomeIcon icon={faLink} className="project__icon" />
                   View Project
                 </a>
+                </Magnetic>
               </div>
             </div>
           </article>
@@ -300,6 +313,7 @@ const Projects = () => {
               </div>
 
               <div className="project__links">
+                <Magnetic>
                 <a
                   className="project__link project__link--secondary"
                   href="https://github.com/Rosuelo996/summarist"
@@ -308,7 +322,9 @@ const Projects = () => {
                   <FontAwesomeIcon icon={faGithub} className="project__icon" />
                   Visit GitHub
                 </a>
+                </Magnetic>
 
+                <Magnetic>
                 <a
                   className="project__link project__link--primary"
                   href="https://summarist.vercel.app/"
@@ -317,6 +333,7 @@ const Projects = () => {
                   <FontAwesomeIcon icon={faLink} className="project__icon" />
                   View Project
                 </a>
+                </Magnetic>
               </div>
             </div>
           </article>
@@ -370,6 +387,7 @@ const Projects = () => {
               </div>
 
               <div className="project__links">
+                <Magnetic>
                 <a
                   className="project__link project__link--secondary"
                   href="https://github.com/Rosuelo996/Library-React"
@@ -378,7 +396,9 @@ const Projects = () => {
                   <FontAwesomeIcon icon={faGithub} className="project__icon" />
                   Visit GitHub
                 </a>
+                </Magnetic>
 
+                <Magnetic>
                 <a
                   className="project__link project__link--primary"
                   href="https://library-react-gold.vercel.app/"
@@ -387,6 +407,7 @@ const Projects = () => {
                   <FontAwesomeIcon icon={faLink} className="project__icon" />
                   View Project
                 </a>
+                </Magnetic>
               </div>
             </div>
           </article>
@@ -438,6 +459,7 @@ const Projects = () => {
               </div>
 
               <div className="project__links">
+                <Magnetic>
                 <a
                   className="project__link project__link--secondary"
                   href="https://github.com/Rosuelo996/Car-Subscription"
@@ -446,7 +468,9 @@ const Projects = () => {
                   <FontAwesomeIcon icon={faGithub} className="project__icon" />
                   Visit GitHub
                 </a>
+                </Magnetic>
 
+                <Magnetic>
                 <a
                   className="project__link project__link--primary"
                   href="https://car-subscription-wine.vercel.app/"
@@ -455,6 +479,7 @@ const Projects = () => {
                   <FontAwesomeIcon icon={faLink} className="project__icon" />
                   View Project
                 </a>
+                </Magnetic>
               </div>
             </div>
           </article>
