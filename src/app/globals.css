@@ -1677,7 +1677,17 @@ PROJECTS
   height: 16px;
 }
 
+@media (max-width: 1200px) {
+  .project__media {
+    aspect-ratio: 6/5;
+  }
+}
+
 @media (max-width: 1000px) {
+  .project {
+    align-items: center;
+  }
+
   .project__media {
     flex: 6;
   }
