@@ -271,7 +271,7 @@ const Projects = () => {
               <TiltCard>
               <Image
                 className="project__image"
-                src="/icons/summarist2.png"
+                src="/icons/summarist3.png"
                 alt="Summarist audiobook platform interface"
                 width={1600}
                 height={900}
