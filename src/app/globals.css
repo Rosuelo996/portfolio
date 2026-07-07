@@ -2793,11 +2793,15 @@ DARK MODE
 
 /* SKILLS CAROUSEL */
 
+
 #skills {
   border-top: 1px solid rgba(30, 42, 36, 0.12);
   border-bottom: 1px solid rgba(30, 42, 36, 0.12);
   padding: 26px 0;
   margin-top: 80px;
+}
+
+.skills__viewport {
   overflow: hidden;
 }
 
@@ -2806,7 +2810,6 @@ DARK MODE
   align-items: center;
   white-space: nowrap;
   will-change: transform;
-  padding-left: 40px;
 }
 
 .skills__slide {
@@ -2814,6 +2817,7 @@ DARK MODE
   align-items: center;
   flex: 0 0 auto;
 }
+
 
 .skills__name {
   font-family: "Instrument Serif", serif;
@@ -2830,10 +2834,6 @@ DARK MODE
     padding: 24px;
   }
 
-  .skills__track {
-    padding-left: 32px;
-  }
-
   .skills__name {
     font-size: 20px;
   }
@@ -2848,8 +2848,8 @@ DARK MODE
     padding: 20px;
   }
 
-  .skills__track {
-    padding-left: 24px;
+  .skills__slide:first-child {
+    margin-left: 24px;
   }
 
   .skills__name {
