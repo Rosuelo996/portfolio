@@ -1960,7 +1960,7 @@ MODAL
 }
 
 .modal__contact {
-  padding: 48px 56px;
+  padding: 44px 56px;
   background: rgba(18, 18, 18, 0.85);
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
@@ -2028,7 +2028,7 @@ MODAL
 
 .modal__title--about {
   font-family: "Instrument Serif", serif;
-  font-size: 32px;
+  font-size: 40px;
   font-weight: 400;
 }
 
@@ -2116,7 +2116,7 @@ MODAL
 
 .modal__title--contact {
   font-family: "Instrument Serif", serif;
-  font-size: 28px;
+  font-size: 40px;
   margin-bottom: 4px;
 }
 
@@ -2129,8 +2129,8 @@ MODAL
 .form {
   display: flex;
   flex-direction: column;
-  margin-top: 24px;
-  gap: 20px;
+  margin-top: 16px;
+  gap: 16px;
 }
 
 .form__item {
@@ -2273,11 +2273,13 @@ textarea.form__item--input {
   width: 24px;
   height: 24px;
   color: #c79b63;
-  transition: color 300ms ease;
+  transition: 
+  color 300ms ease,
+  transform 300ms ease;
 }
 
 .modal__close--icon:hover {
-  transform: scale(1.09);
+  transform: scale(1.09) rotate(90deg);
   color: #e7d7c0;
 }
 
@@ -2340,7 +2342,7 @@ textarea.form__item--input {
 }
 
 .form__message {
-  margin-top: 12px;
+  margin-top: 10px;
   color: #c9ad88;
   font-size: 14px;
   line-height: 1.5;
@@ -2375,17 +2377,12 @@ textarea.form__item--input {
     justify-content: center;
   }
 
-  .modal__title--contact {
-    font-size: 32px;
-    line-height: 1.2;
-  }
-
   .modal__subtitle--contact {
     font-size: 18px;
   }
 
   .form {
-    gap: 20px;
+    gap: 12px;
   }
 
   .form__item--label {
@@ -2418,7 +2415,6 @@ textarea.form__item--input {
   }
 
   .modal__title--about {
-    font-size: 32px;
     margin-bottom: 8px;
   }
 
