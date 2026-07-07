@@ -8,6 +8,8 @@ import Modal from "./components/Modal";
 import { useEffect, useState } from "react";
 import AOS from "aos"
 import "aos/dist/aos.css"
+import ProgressBar from "./components/ui/ProgressBar";
+import SkillsCarousel from "./components/ui/SkillsCarousel";
 
 export default function Home() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -31,6 +33,7 @@ export default function Home() {
 
   return (
     <div className={darkMode ? "dark" : ""}>
+       <ProgressBar />
       <Nav
         openModal={openModal}
         darkMode={darkMode}
@@ -41,6 +44,7 @@ export default function Home() {
         <Landing 
          openModal={openModal}
          darkMode={darkMode} />
+         <SkillsCarousel />
         <Gallery />
         <Projects />
       </main>

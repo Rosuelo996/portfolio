@@ -26,7 +26,7 @@ const Gallery = () => {
           <h2 className="section__title" data-aos="fade">
             Small details.
             <br />
-            Big <span className="gold">experience</span>.
+            Big <span className="section__title--highlight bronze">experience</span>.
           </h2>
 
           <div

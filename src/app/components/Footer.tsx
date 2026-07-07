@@ -18,7 +18,7 @@ const Footer = ({ darkMode }: Props) => {
 
         <div className="footer__intro" data-aos="fade" data-aos-duration="500">
           <h2 className="footer__title">
-            Let&apos;s build something <span className="gold">meaningful</span>.
+            Let&apos;s build something <span className="bronze">meaningful</span>.
           </h2>
           <p className="footer__description">
             Open to opportunities and collaborations.

@@ -27,7 +27,7 @@ const HeroContent = ({ openModal }: Props) => {
           data-aos-delay="300"
           data-aos-duration="1200">
             I'm
-            <span className="gold"> Stefano</span>.
+            <span className="hero__title--highlight bronze"> Stefano</span>.
           </h1>
         </div>
 
