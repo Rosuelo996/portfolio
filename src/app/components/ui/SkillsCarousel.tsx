@@ -42,8 +42,8 @@ const [emblaRef] = useEmblaCarousel(
   <div className="skills__track">
     {skills.map((skill) => (
       <div className="skills__slide" key={skill}>
-        <p className="skills__name">{skill}</p>
         <span className="skills__separator">✦</span>
+        <p className="skills__name">{skill}</p>
       </div>
     ))}
   </div>

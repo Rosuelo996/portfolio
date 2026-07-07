@@ -2816,8 +2816,9 @@ DARK MODE
   display: flex;
   align-items: center;
   flex: 0 0 auto;
+  gap: 40px;
+  padding-right: 40px;
 }
-
 
 .skills__name {
   font-family: "Instrument Serif", serif;
@@ -2826,8 +2827,8 @@ DARK MODE
 
 .skills__separator {
   color: #c97735;
-  margin: 0 40px;
 }
+
 
 @media (max-width: 768px) {
   #skills {
@@ -2838,8 +2839,9 @@ DARK MODE
     font-size: 20px;
   }
 
-  .skills__separator {
-    margin: 0 32px;
+  .skills__slide {
+    gap: 32px;
+    padding-right: 32px;
   }
 }
 
@@ -2848,16 +2850,13 @@ DARK MODE
     padding: 20px;
   }
 
-  .skills__slide:first-child {
-    margin-left: 24px;
-  }
-
   .skills__name {
     font-size: 18px;
   }
 
-  .skills__separator {
-    margin: 0 24px;
+  .skills__slide {
+    gap: 24px;
+    margin-right: 24px;
   }
 }
 
