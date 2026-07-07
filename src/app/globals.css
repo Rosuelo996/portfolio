@@ -1516,16 +1516,22 @@ PROJECTS
   flex-direction: row-reverse;
 }
 
-.project__card {
+
+.project__media {
   flex: 5.5;
   aspect-ratio: 16 / 11;
+  border-radius: 18px;
+  order: 1;
+  object-fit: cover;
+}
+
+.project__frame {
+  width: 100%;
+  height: 100%;
   border-radius: 18px;
   overflow: hidden;
   border: 1px solid #1e2a241f;
   box-shadow: 0 30px 60px -30px rgba(0, 0, 0, 0.4);
-  object-fit: cover;
-  order: 1;
-  transition: transform 60ms ease;
   transform-style: preserve-3d;
   will-change: transform;
 }
@@ -2842,4 +2848,12 @@ DARK MODE
   .skills__separator {
     margin: 0 24px;
   }
+}
+
+/* MAGNETIC */
+
+.magnetic {
+  display: inline-block;
+  transition: transform 250ms cubic-bezier(.22, 1, .36, 1);
+  will-change: transform;
 }

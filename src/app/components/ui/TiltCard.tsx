@@ -7,6 +7,7 @@ type TiltCardProps = {
 export default function TiltCard({ children }: TiltCardProps) {
   return (
     <Tilt
+      className="project__frame"
       tiltMaxAngleX={5}
       tiltMaxAngleY={5}
       perspective={1200}

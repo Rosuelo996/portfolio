@@ -4,9 +4,11 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
 import Typewriter from "./ui/Typewriter";
-import TiltCard from "./ui/Tilt";
+import TiltCard from "./ui/TiltCard";
+
 
 const Projects = () => {
+  
   return (
     <section id="projects">
       <div className="container">
@@ -36,12 +38,12 @@ const Projects = () => {
 
         <div className="project__list">
           <article className="project">
-            <TiltCard>
             <div
-              className="project__card"
+              className="project__media"
               data-aos="fade-up"
               data-aos-duration="700"
             >
+              <TiltCard>
               <Image
                 className="project__image"
                 src="/icons/skinstric2.png"
@@ -49,8 +51,8 @@ const Projects = () => {
                 width={1600}
                 height={900}
               />
+              </TiltCard>
             </div>
-            </TiltCard>
             <div
               className="project__content"
               data-aos="fade-up"
@@ -108,12 +110,12 @@ const Projects = () => {
           </article>
 
           <article className="project">
-            <TiltCard>
             <div
-              className="project__card"
+              className="project__media"
               data-aos="fade-up"
               data-aos-duration="700"
             >
+              <TiltCard>
               <Image
                 className="project__image"
                 src="/icons/movie-vault.png"
@@ -121,8 +123,8 @@ const Projects = () => {
                 width={1600}
                 height={900}
               />
+              </TiltCard>
             </div>
-            </TiltCard>
             <div
               className="project__content"
               data-aos="fade-up"
@@ -178,12 +180,12 @@ const Projects = () => {
           </article>
 
           <article className="project">
-            <TiltCard>
             <div
-              className="project__card"
+              className="project__media"
               data-aos="fade-up"
               data-aos-duration="700"
             >
+              <TiltCard>
               <Image
                 className="project__image"
                 src="/icons/ultraverse2.png"
@@ -191,8 +193,8 @@ const Projects = () => {
                 width={1600}
                 height={900}
               />
+              </TiltCard>
             </div>
-            </TiltCard>
             <div
               className="project__content"
               data-aos="fade-up"
@@ -248,12 +250,12 @@ const Projects = () => {
           </article>
 
           <article className="project">
-            <TiltCard>
             <div
-              className="project__card"
+              className="project__media"
               data-aos="fade-up"
               data-aos-duration="700"
             >
+              <TiltCard>
               <Image
                 className="project__image"
                 src="/icons/summarist2.png"
@@ -261,8 +263,8 @@ const Projects = () => {
                 width={1600}
                 height={900}
               />
+              </TiltCard>
             </div>
-            </TiltCard>
             <div
               className="project__content"
               data-aos="fade-up"
@@ -320,12 +322,12 @@ const Projects = () => {
           </article>
 
           <article className="project">
-            <TiltCard>
             <div
-              className="project__card"
+              className="project__media"
               data-aos="fade-up"
               data-aos-duration="700"
             >
+              <TiltCard>
               <Image
                 className="project__image"
                 src="/icons/library.png"
@@ -333,8 +335,8 @@ const Projects = () => {
                 width={1600}
                 height={900}
               />
+              </TiltCard>
             </div>
-            </TiltCard>
             <div
               className="project__content"
               data-aos="fade-up"
@@ -390,12 +392,12 @@ const Projects = () => {
           </article>
 
           <article className="project">
-            <TiltCard>
             <div
-              className="project__card"
+              className="project__media"
               data-aos="fade-up"
               data-aos-duration="700"
             >
+              <TiltCard>
               <Image
                 className="project__image"
                 src="/icons/car-subscription.png"
@@ -403,8 +405,8 @@ const Projects = () => {
                 width={1600}
                 height={900}
               />
+              </TiltCard>
             </div>
-            </TiltCard>
             <div
               className="project__content"
               data-aos="fade-up"
