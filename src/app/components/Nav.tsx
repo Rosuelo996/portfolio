@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCircleHalfStroke } from "@fortawesome/free-solid-svg-icons";
 
 type Props = {
   openModal: () => void;
@@ -65,7 +67,7 @@ const Nav = ({ openModal, darkMode, setDarkMode }: Props) => {
             className="nav__link--anchor theme-toggle"
             onClick={() => setDarkMode(!darkMode)}
           >
-            <span>◐</span>
+            <FontAwesomeIcon icon={faCircleHalfStroke} className="theme-toggle__icon" />
           </button>
         </li>
       </ul>

@@ -132,23 +132,21 @@ nav {
 }
 
 .theme-toggle {
-  width: 38px;
-  height: 38px;
+  width: 32px;
+  height: 32px;
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
   border-radius: 50%;
   border: 1px solid rgba(30, 42, 36, 0.12);
-  font-size: 18px;
 }
 
-.theme-toggle span {
-  display: inline-block;
+.theme-toggle__icon {
+  font-size: 16px;
   transition: transform 300ms ease;
 }
 
-.theme-toggle:hover span {
+.theme-toggle:hover .theme-toggle__icon {
   transform: rotate(30deg);
 }
 
@@ -199,8 +197,11 @@ nav {
     font-size: 14px;
   }
   .theme-toggle {
-    width: 20px;
-    height: 20px;
+    width: 28px;
+    height: 28px;
+  }
+  .theme-toggle__icon {
+    font-size: 14px;
   }
 }
 
