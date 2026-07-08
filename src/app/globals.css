@@ -374,6 +374,7 @@ HERO
 /* HERO VISUAL */
 
 .hero__visual {
+  position: relative;
   flex: 1;
   display: flex;
   justify-content: center;
@@ -1521,7 +1522,6 @@ PROJECTS
 
 .project__media {
   flex: 5.5;
-  aspect-ratio: 16 / 11;
   border-radius: 18px;
   order: 1;
   object-fit: cover;
@@ -1539,7 +1539,7 @@ PROJECTS
 .project__frame {
   display: block;
   inline-size: 100%;
-  aspect-ratio: inherit;
+  aspect-ratio: 16 / 11;
   border-radius: 18px;
   overflow: hidden;
   border: 1px solid #1e2a241f;
@@ -1693,7 +1693,7 @@ PROJECTS
 
 
 @media (max-width: 1200px) {
-  .project__media {
+  .project__frame {
     aspect-ratio: 6/5;
   }
 }
@@ -1743,7 +1743,7 @@ PROJECTS
   .project:nth-child(even) {
     flex-direction: column;
   }
-  .project__media {
+  .project__frame {
     aspect-ratio: 4/3;
   }
   .project__content {
