@@ -1530,7 +1530,6 @@ PROJECTS
 
 .project__media:hover .project__frame {
   border-color: rgba(201, 119, 53, 0.3);
-  box-shadow: 0 38px 70px -30px rgba(0, 0, 0, 0.22);
 }
 
 .project__media:hover .project__image {
@@ -1680,7 +1679,6 @@ PROJECTS
 
 .project:has(.project__link--primary:hover) .project__frame {
   border-color: rgba(201, 119, 53, 0.3);
-  box-shadow: 0 38px 70px -30px rgba(0, 0, 0, 0.22);
 }
 
 .project:has(.project__link--primary:hover) .project__image {
