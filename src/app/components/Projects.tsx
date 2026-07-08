@@ -135,7 +135,7 @@ const Projects = () => {
               >
                 <Image
                   className="project__image"
-                  src="/icons/movie-vault.png"
+                  src="/icons/movie-vault2.png"
                   alt="Movie Vault movie search application"
                   width={1600}
                   height={900}
