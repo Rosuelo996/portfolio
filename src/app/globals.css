@@ -2840,7 +2840,7 @@ DARK MODE
 
 @media (max-width: 768px) {
   #skills {
-    padding: 24px;
+    padding: 24px 0;
   }
 
   .skills__name {
@@ -2855,7 +2855,7 @@ DARK MODE
 
 @media (max-width: 548px) {
   #skills {
-    padding: 20px;
+    padding: 20px 0;
   }
 
   .skills__name {
@@ -2864,7 +2864,7 @@ DARK MODE
 
   .skills__slide {
     gap: 24px;
-    margin-right: 24px;
+    padding-right: 24px;
   }
 }
 
