@@ -645,28 +645,27 @@ HERO
 @keyframes particleReveal {
   from {
     opacity: 0;
-    transform: translateY(8px) scale(0.92);
   }
 
   to {
     opacity: 1;
-    transform: translateY(0) scale(1);
   }
 }
 
 @keyframes floatParticle {
   0% {
-    transform: translateY(0);
+    translate: 0 0;
   }
 
   50% {
-    transform: translateY(-5px);
+    translate: 0 -5px;
   }
 
   100% {
-    transform: translateY(0);
+    translate: 0 0;
   }
 }
+
 
 .hero__particle--1 {
   left: 50%;
