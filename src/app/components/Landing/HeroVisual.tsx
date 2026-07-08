@@ -15,50 +15,59 @@ const HeroVisual = ({ openModal, darkMode }: Props) => {
 
   const particleStrength = [18, 10, 22, 14, 20, 26, 12, 16, 14, 24];
 
-const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
-  
-  const rect = e.currentTarget.getBoundingClientRect();
+  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
+    const rect = e.currentTarget.getBoundingClientRect();
 
-  const mouseX =
-    (e.clientX - rect.left - rect.width / 2) / (rect.width / 2);
+    const mouseXInsideHero = e.clientX - rect.left;
+    const mouseYInsideHero = e.clientY - rect.top;
 
-  const mouseY =
-    (e.clientY - rect.top - rect.height / 2) / (rect.height / 2);
+    const heroCenterX = rect.width / 2;
+    const heroCenterY = rect.height / 2;
 
-  particlesRef.current.forEach((particle, index) => {
-    if (!particle) return;
+    const mouseOffsetX = mouseXInsideHero - heroCenterX;
+    const mouseOffsetY = mouseYInsideHero - heroCenterY;
 
-    const strength = particleStrength[index];
+    const mouseX = mouseOffsetX / heroCenterX;
+    const mouseY = mouseOffsetY / heroCenterY;
 
-    const directionX = index % 2 === 0 ? 1 : -1;
-    const directionY = index % 3 === 0 ? -1 : 1;
+    particlesRef.current.forEach((particle, index) => {
+      if (!particle) return;
 
-    gsap.to(particle, {
-      x: mouseX * strength * directionX,
-      y: mouseY * strength * directionY,
-      duration: 0.8,
-      ease: "power3.out",
-      overwrite: "auto",
+      const strength = particleStrength[index];
+
+      const directionX = index % 2 === 0 ? 1 : -1;
+      const directionY = index % 3 === 0 ? -1 : 1;
+
+      gsap.to(particle, {
+        x: mouseX * strength * directionX,
+        y: mouseY * strength * directionY,
+        duration: 0.8,
+        ease: "power3.out",
+        overwrite: "auto",
+      });
     });
-  });
-};
+  };
 
-const handleMouseLeave = () => {
-  particlesRef.current.forEach((particle) => {
-    if (!particle) return;
+  const handleMouseLeave = () => {
+    particlesRef.current.forEach((particle) => {
+      if (!particle) return;
 
-    gsap.to(particle, {
-      x: 0,
-      y: 0,
-      duration: 0.8,
-      ease: "power3.out",
-      overwrite: "auto",
+      gsap.to(particle, {
+        x: 0,
+        y: 0,
+        duration: 0.8,
+        ease: "power3.out",
+        overwrite: "auto",
+      });
     });
-  });
-};
+  };
 
   return (
-    <div className="hero__visual" onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave}>
+    <div
+      className="hero__visual"
+      onMouseMove={handleMouseMove}
+      onMouseLeave={handleMouseLeave}
+    >
       <div className="hero__particles">
         <img
           ref={registerParticle(0)}
