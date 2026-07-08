@@ -2803,6 +2803,14 @@ DARK MODE
 
 .skills__viewport {
   overflow: hidden;
+  mask-image:
+      linear-gradient(
+        to right,
+        transparent,
+        black 8%,
+        black 92%,
+        transparent
+      );
 }
 
 .skills__track {
