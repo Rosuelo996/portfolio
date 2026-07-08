@@ -368,7 +368,7 @@ HERO
 }
 
 .social__link:hover .social__link--icon {
-  color: #1b1712;
+  color: #c97735;
 }
 
 /* HERO VISUAL */
@@ -923,7 +923,7 @@ MAIL BUTTON
 .mail__btn:hover {
   background-color: #FBF6EFBF;
   box-shadow: 0 8px 20px rgba(30, 42, 36, 0.18);
-  color: #1b1712;
+  color: #c97735;
 }
 
 .mail__btn--icon {
@@ -1134,7 +1134,7 @@ GALLERY
   position: absolute;
   right: 12px;
   bottom: 12px;
-  color: #faf8f5;
+  color: #f3efe7;
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 0.08em;
@@ -1528,6 +1528,16 @@ PROJECTS
   object-fit: cover;
 }
 
+.project__media:hover .project__frame {
+  border-color: rgba(201, 119, 53, 0.3);
+  box-shadow: 0 38px 70px -30px rgba(0, 0, 0, 0.22);
+}
+
+.project__media:hover .project__image {
+  transform: scale(1.02);
+  filter: brightness(1.02) contrast(1.02);
+}
+
 .project__frame {
   display: block;
   inline-size: 100%;
@@ -1538,6 +1548,9 @@ PROJECTS
   box-shadow: 0 30px 60px -30px rgba(0, 0, 0, 0.4);
   transform-style: preserve-3d;
   will-change: transform;
+  transition:
+    box-shadow 350ms ease,
+    border-color 350ms ease;
 }
 
 .project__image {
@@ -1642,7 +1655,6 @@ PROJECTS
     background-color 0.25s ease,
     border-color 0.25s ease,
     box-shadow 0.25s ease,
-    transform 0.25s ease,
     color 0.25s ease;
 }
 
@@ -1652,7 +1664,6 @@ PROJECTS
 }
 
 .project__link--secondary:hover {
-  transform: translateY(-2px);
   border-color: #d67a33;
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
 }
@@ -1664,19 +1675,24 @@ PROJECTS
 }
 
 .project__link--primary:hover {
-  transform: translateY(-2px);
-  background: #2a211b;
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
 }
 
+.project:has(.project__link--primary:hover) .project__frame {
+  border-color: rgba(201, 119, 53, 0.3);
+  box-shadow: 0 38px 70px -30px rgba(0, 0, 0, 0.22);
+}
+
 .project:has(.project__link--primary:hover) .project__image {
-  transform: scale(1.03);
+  transform: scale(1.02);
+  filter: brightness(1.02) contrast(1.02);
 }
 
 .project__icon {
   width: 16px;
   height: 16px;
 }
+
 
 @media (max-width: 1200px) {
   .project__media {
@@ -2687,6 +2703,14 @@ DARK MODE
 
 .dark .project__link--secondary:hover {
   border-color: transparent;
+}
+
+.dark .project__media:hover .project__frame,
+.dark .project:has(.project__link--primary:hover) .project__frame {
+  border-color: rgba(201, 119, 53, 0.5);
+  box-shadow:
+    0 40px 80px -30px rgba(0,0,0,.65),
+    0 0 40px rgba(201,119,53,.16);
 }
 
 .dark .footer__divider--dot,
