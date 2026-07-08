@@ -4,6 +4,9 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Stefano Wijegunaratne | Frontend Developer",
   description:  "Frontend developer portfolio featuring projects built with React, Next.js and TypeScript.",
+  openGraph: {
+    images: ["/icons/portfolio-preview.png"],
+  },
 };
 
 export default function RootLayout({
