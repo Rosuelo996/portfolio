@@ -20,8 +20,8 @@ const SkillsCarousel = () => {
   const [emblaRef] = useEmblaCarousel(
     {
       loop: true,
-      dragFree: true,
-      watchDrag: true,
+      dragFree: false,
+      watchDrag: false,
     },
     [
       AutoScroll({
