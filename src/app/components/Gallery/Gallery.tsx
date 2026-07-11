@@ -16,7 +16,7 @@ const Gallery = () => {
   }
 
   return (
-    <section onMouseMove={handleMove} id="gallery">
+    <section data-test="gallery-section" onMouseMove={handleMove} id="gallery">
       <div className="container">
         <p className="section__eyebrow" data-aos="fade">
           Animation Gallery

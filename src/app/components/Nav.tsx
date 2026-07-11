@@ -21,7 +21,7 @@ const Nav = ({ openModal, darkMode, setDarkMode }: Props) => {
   }, []);
   
   return (
-    <nav className={scrolled ? "nav nav--scrolled" : "nav"}>
+    <nav data-test="navbar" className={scrolled ? "nav nav--scrolled" : "nav"}>
       <figure className="logo">
         {darkMode ? (
           <img className="logo__img" src="./icons/SW-light.svg" alt="" />
@@ -32,6 +32,7 @@ const Nav = ({ openModal, darkMode, setDarkMode }: Props) => {
       <ul className="nav__link--list">
         <li className="nav__link">
           <a
+            data-test="nav-gallery"
             href="#gallery"
             className="nav__link--anchor 
                 link__hover-effect 
@@ -42,6 +43,7 @@ const Nav = ({ openModal, darkMode, setDarkMode }: Props) => {
         </li>
         <li className="nav__link">
           <a
+           data-test="nav-projects"
             href="#projects"
             className="nav__link--anchor 
                 link__hover-effect 
@@ -52,6 +54,7 @@ const Nav = ({ openModal, darkMode, setDarkMode }: Props) => {
         </li>
         <li className="nav__link">
           <a
+            data-test="nav-contact"
             href="#contact"
             className="
                 nav__link--anchor 
@@ -64,6 +67,7 @@ const Nav = ({ openModal, darkMode, setDarkMode }: Props) => {
         </li>
         <li className="nav__link click">
           <button
+            data-test="theme-toggle"
             className="nav__link--anchor theme-toggle"
             onClick={() => setDarkMode(!darkMode)}
           >

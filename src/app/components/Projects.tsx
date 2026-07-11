@@ -9,7 +9,7 @@ import Magnetic from "./ui/Magnetic";
 
 const Projects = () => {
   return (
-    <section id="projects">
+    <section data-test="projects-section" id="projects">
       <div className="container">
         <p className="section__eyebrow">Projects</p>
         <div className="section__header">

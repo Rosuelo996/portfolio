@@ -32,7 +32,9 @@ export default function Home() {
 }, [])
 
   return (
-    <div className={darkMode ? "dark" : ""}>
+    <div  
+    data-test="app"
+    className={darkMode ? "dark" : ""}>
        <ProgressBar />
       <Nav
         openModal={openModal}
