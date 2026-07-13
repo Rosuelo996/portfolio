@@ -2144,6 +2144,7 @@ MODAL
 .modal__title--contact {
   font-family: "Instrument Serif", serif;
   font-size: 40px;
+  letter-spacing: 0.04em;
   margin-bottom: 4px;
 }
 
