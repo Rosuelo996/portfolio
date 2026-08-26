@@ -114,7 +114,7 @@ const Projects = () => {
                 <Magnetic>
                   <a
                     className="project__link project__link--primary"
-                    href="shopfloor-ten.vercel.app"
+                    href="https://shopfloor-ten.vercel.app/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
