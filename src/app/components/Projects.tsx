@@ -44,17 +44,107 @@ const Projects = () => {
             >
               <TiltCard>
                 <a
-                href="https://skinstric-amber.vercel.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Image
-                  className="project__image"
-                  src="/icons/skinstric2.png"
-                  alt="Skinstric skincare analysis dashboard"
-                  width={1600}
-                  height={900}
-                />
+                  href="shopfloor-ten.vercel.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image
+                    className="project__image"
+                    src="/icons/shopfloor2.png"
+                    alt="ShopFloor store management dashboard"
+                    width={1600}
+                    height={900}
+                  />
+                </a>
+              </TiltCard>
+            </div>
+
+            <div
+              className="project__content"
+              data-aos="fade-up"
+              data-aos-duration="700"
+              data-aos-delay="150"
+            >
+              <div className="project__info">
+                <div className="project__header">
+                  <span className="project__number">01</span>
+                  <span className="project__category">
+                    STORE MANAGEMENT • Full Stack
+                  </span>
+                </div>
+
+                <h3 className="project__title">ShopFloor</h3>
+
+                <p className="project__description">
+                  Full-stack store management platform that turns operational
+                  data into actionable insights, bringing sales performance,
+                  tasks, handovers, team coverage and notifications into one
+                  dashboard.
+                </p>
+
+                <ul className="project__stack">
+                  <li className="project__tech">React</li>
+                  <span className="project__divider">✦</span>
+                  <li className="project__tech">TypeScript</li>
+                  <span className="project__divider">✦</span>
+                  <li className="project__tech">Node.js</li>
+                  <span className="project__divider">✦</span>
+                  <li className="project__tech">Express</li>
+                  <span className="project__divider">✦</span>
+                  <li className="project__tech">PostgreSQL</li>
+                </ul>
+              </div>
+
+              <div className="project__links">
+                <Magnetic>
+                  <a
+                    className="project__link project__link--secondary"
+                    href="https://github.com/Rosuelo996/shopfloor"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FontAwesomeIcon
+                      icon={faGithub}
+                      className="project__icon"
+                    />
+                    Visit GitHub
+                  </a>
+                </Magnetic>
+
+                <Magnetic>
+                  <a
+                    className="project__link project__link--primary"
+                    href="shopfloor-ten.vercel.app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FontAwesomeIcon icon={faLink} className="project__icon" />
+                    View Project
+                  </a>
+                </Magnetic>
+              </div>
+            </div>
+          </article>
+
+          <article className="project">
+            <div
+              className="project__media"
+              data-aos="fade-up"
+              data-aos-duration="700"
+            >
+              <TiltCard>
+                <a
+                  href="https://skinstric-amber.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image
+                    className="project__image"
+                    src="/icons/skinstric2.png"
+                    alt="Skinstric skincare analysis dashboard"
+                    width={1600}
+                    height={900}
+                  />
                 </a>
               </TiltCard>
             </div>
@@ -66,7 +156,7 @@ const Projects = () => {
             >
               <div className="project__info">
                 <div className="project__header">
-                  <span className="project__number">01</span>
+                  <span className="project__number">02</span>
                   <span className="project__category">
                     AI SKINCARE • Next.js
                   </span>
@@ -129,19 +219,19 @@ const Projects = () => {
             >
               <TiltCard>
                 <a
-                href="https://movie-vault-dusky.vercel.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Image
-                  className="project__image"
-                  src="/icons/movie-vault2.png"
-                  alt="Movie Vault movie search application"
-                  width={1600}
-                  height={900}
-                />
-                </a> 
-              </TiltCard>             
+                  href="https://movie-vault-dusky.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image
+                    className="project__image"
+                    src="/icons/movie-vault2.png"
+                    alt="Movie Vault movie search application"
+                    width={1600}
+                    height={900}
+                  />
+                </a>
+              </TiltCard>
             </div>
             <div
               className="project__content"
@@ -151,7 +241,7 @@ const Projects = () => {
             >
               <div className="project__info">
                 <div className="project__header">
-                  <span className="project__number">02</span>
+                  <span className="project__number">03</span>
                   <span className="project__category">
                     Movie Discovery • React
                   </span>
@@ -212,17 +302,17 @@ const Projects = () => {
             >
               <TiltCard>
                 <a
-                href="https://stefano-ultraverse.vercel.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Image
-                  className="project__image"
-                  src="/icons/ultraverse2.png"
-                  alt="Ultraverse NFT marketplace homepage"
-                  width={1600}
-                  height={900}
-                />
+                  href="https://stefano-ultraverse.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image
+                    className="project__image"
+                    src="/icons/ultraverse2.png"
+                    alt="Ultraverse NFT marketplace homepage"
+                    width={1600}
+                    height={900}
+                  />
                 </a>
               </TiltCard>
             </div>
@@ -234,7 +324,7 @@ const Projects = () => {
             >
               <div className="project__info">
                 <div className="project__header">
-                  <span className="project__number">03</span>
+                  <span className="project__number">04</span>
                   <span className="project__category">
                     NFT Marketplace • Next.js
                   </span>
@@ -295,18 +385,18 @@ const Projects = () => {
             >
               <TiltCard>
                 <a
-                href="https://summarist.vercel.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Image
-                  className="project__image"
-                  src="/icons/summarist3.png"
-                  alt="Summarist audiobook platform interface"
-                  width={1600}
-                  height={900}
-                />
-              </a>
+                  href="https://summarist.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image
+                    className="project__image"
+                    src="/icons/summarist3.png"
+                    alt="Summarist audiobook platform interface"
+                    width={1600}
+                    height={900}
+                  />
+                </a>
               </TiltCard>
             </div>
             <div
@@ -317,7 +407,7 @@ const Projects = () => {
             >
               <div className="project__info">
                 <div className="project__header">
-                  <span className="project__number">04</span>
+                  <span className="project__number">05</span>
                   <span className="project__category">
                     Book Summaries • React
                   </span>
@@ -380,19 +470,19 @@ const Projects = () => {
             >
               <TiltCard>
                 <a
-                href="https://library-react-gold.vercel.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Image
-                  className="project__image"
-                  src="/icons/library.png"
-                  alt="Library e-commerce application homepage"
-                  width={1600}
-                  height={900}
-                />
+                  href="https://library-react-gold.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image
+                    className="project__image"
+                    src="/icons/library.png"
+                    alt="Library e-commerce application homepage"
+                    width={1600}
+                    height={900}
+                  />
                 </a>
-              </TiltCard>              
+              </TiltCard>
             </div>
             <div
               className="project__content"
@@ -402,7 +492,7 @@ const Projects = () => {
             >
               <div className="project__info">
                 <div className="project__header">
-                  <span className="project__number">05</span>
+                  <span className="project__number">06</span>
                   <span className="project__category">
                     Reading Platform • React
                   </span>
@@ -463,19 +553,19 @@ const Projects = () => {
             >
               <TiltCard>
                 <a
-                href="https://car-subscription-wine.vercel.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Image
-                  className="project__image"
-                  src="/icons/car-subscription.png"
-                  alt="Car subscription platform with filtering"
-                  width={1600}
-                  height={900}
-                />
+                  href="https://car-subscription-wine.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image
+                    className="project__image"
+                    src="/icons/car-subscription.png"
+                    alt="Car subscription platform with filtering"
+                    width={1600}
+                    height={900}
+                  />
                 </a>
-              </TiltCard>             
+              </TiltCard>
             </div>
             <div
               className="project__content"
@@ -485,7 +575,7 @@ const Projects = () => {
             >
               <div className="project__info">
                 <div className="project__header">
-                  <span className="project__number">06</span>
+                  <span className="project__number">07</span>
                   <span className="project__category">
                     Car Subscription • Javascript
                   </span>
