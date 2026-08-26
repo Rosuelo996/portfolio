@@ -44,7 +44,7 @@ const Projects = () => {
             >
               <TiltCard>
                 <a
-                  href="shopfloor-ten.vercel.app"
+                  href="https://shopfloor-ten.vercel.app/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
