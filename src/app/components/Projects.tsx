@@ -50,7 +50,7 @@ const Projects = () => {
                 >
                   <Image
                     className="project__image"
-                    src="/icons/shopfloor2.png"
+                    src="/icons/shopfloor.png"
                     alt="ShopFloor store management dashboard"
                     width={1600}
                     height={900}
